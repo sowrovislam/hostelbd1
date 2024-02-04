@@ -38,7 +38,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_marginTop="@dimen/_2sdp"
-                    android:layout_width="@dimen/_125sdp"
+                    android:layout_width="@dimen/_110sdp"
 
                     android:layout_height="@dimen/_90sdp"
                     app:cardCornerRadius="@dimen/_7sdp"
@@ -46,7 +46,7 @@
                     >
 
                     <ImageView
-                        android:layout_width="@dimen/_125sdp"
+                        android:layout_width="@dimen/_110sdp"
                         android:layout_height="@dimen/_90sdp"
                         android:src="@drawable/hostelpic"
                         android:scaleType="centerCrop"
@@ -163,6 +163,7 @@
                             android:layout_height="@dimen/_20sdp"
                             android:textSize="@dimen/_9sdp"
                             android:gravity="center"
+
 
 
                             android:textStyle="bold"

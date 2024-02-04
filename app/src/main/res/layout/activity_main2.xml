@@ -20,25 +20,62 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+
                 >
 
-
-                <com.google.android.material.appbar.AppBarLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:background="#3CA2AF" >
+                    android:orientation="horizontal"
+                    android:background="@drawable/bacroundapp"
 
-                    <com.google.android.material.appbar.MaterialToolbar
-                        android:layout_width="match_parent"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:title="Hostel-BD"
-                        app:titleTextColor="@color/black"
-                        app:navigationIcon="@drawable/baseline_arrow_forward_24"
-                        />
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="serif-monospace"
+                        android:gravity="center"
+                        android:text="Hostel-BD"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_marginEnd="@dimen/_7sdp"
+
+                            android:layout_alignParentEnd="true"
+                            android:layout_height="46dp"
+                            android:src="@drawable/hostelbd"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#FF000000"
+                            tools:ignore="MissingConstraints" />
 
 
 
-                </com.google.android.material.appbar.AppBarLayout>
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
 
 
 
@@ -353,6 +390,21 @@
 
                     />
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/sss"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_alignParentBottom="true"
+                        app:menu="@menu/menu" />
+
+
+                </RelativeLayout>
+
 
             </LinearLayout>
 
@@ -390,22 +442,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:menu="@menu/menu"
-                android:layout_alignParentBottom="true"
-                android:id="@+id/sss" />
-
-
-        </RelativeLayout>
-
 
 
     </LinearLayout>
